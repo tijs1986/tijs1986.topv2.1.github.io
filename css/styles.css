@@ -254,6 +254,7 @@ span{
 }
 
 .container01{
+    width: 15rem;
     border: 2px solid;
     color: #f14b0a;
     display: flex;
@@ -270,6 +271,7 @@ span{
     height: 15rem;
     a{
         img{
+            align-self: center;
             height: 100px;
             width: 100px;
                 text-decoration: none;
@@ -372,7 +374,13 @@ svg:hover{
 }
 
 /* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSS */
-@media (max-width: 375px) {
+@media (max-width: 430px) {
+.barner{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
 .content{
   height: 310vh;
   grid-template-columns: 3fr 3fr 1fr;
