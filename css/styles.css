@@ -14,9 +14,6 @@ body{
   border: 0;
   width: 100%;
 }
-.title {
-	color: #5C6AC4;
-}
 
 h1{
     text-align: center; 
@@ -255,14 +252,12 @@ span{
 }
 
 .container01{
-    width: 15rem;
-    border: 2px solid;
-    color: #f14b0a;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
     gap: 10px;
-    justify-content: center;
 }
 
 .container02{
@@ -327,13 +322,14 @@ svg:hover{
 
 .barner{
   height: 3rem;
-  width: 100%;
+  font-size: 2rem;
+  width: 100vw;
   background-color: red;
   text-align: center;
   align-content: center;
 }
 .content{
-  width: 100%;
+  width: 100vw;
   height: 150vh;
   display: grid;
   grid-template-columns: 1.5fr 2fr 3fr 2fr 1.5fr;
@@ -341,8 +337,7 @@ svg:hover{
   grid-template-areas: "lside mid mid mid rside"
                       "lside mid mid mid rside"
                       "lfooter footer footer footer rfooter";
-  /* gap: 5px; */
-  /* border: solid 2px black; */
+
 }
 
 .c1{
@@ -359,17 +354,17 @@ svg:hover{
 
 .c4{
   grid-area: footer;
-  display: block;
+  /* display: block; */
   align-content: center;
 }
 .c5{
   grid-area: lfooter;
-  display: block;
+  /* display: block; */
   align-content: center;
 }
 .c6{
   grid-area: rfooter;
-  display: block;
+  /* display: block; */
   align-content: center;
 }
 
@@ -381,6 +376,7 @@ svg:hover{
     color: white;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
 }
 .content{
   height: 310vh;
@@ -405,9 +401,9 @@ svg:hover{
 }
 .container01{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .container02{
@@ -475,8 +471,18 @@ svg:hover{
     }
 
     .content{
-        height: 300vh;
+        height: 200vh;
+        /* display: flex;
+        flex-wrap: wrap; */
+        
     }
+
+    /* .c2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+
 
 }
 
@@ -488,10 +494,6 @@ svg:hover{
 }
 
 @media (min-width: 786px) and (max-width: 900px ) {
-    
-    /* .pg-class02{
-    font-size: 1.1rem;
-    } */
 
     .content{
         height: 230vh;
@@ -501,6 +503,12 @@ svg:hover{
 @media (min-width:900px) {
     ul{
         line-height: 5;
+    }
+
+    .barner{
+        height: 4rem;
+        font-size: 2.5rem;
+        font-weight: 1000;
     }
 
     .content{
@@ -521,5 +529,10 @@ svg:hover{
 @media (min-width:1485px) {
     .content{
         height: 160vh;
+    }
+    .barner{
+        height: 4rem;
+        font-size: 2.5rem;
+        font-weight: 1000;
     }
 }
