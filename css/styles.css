@@ -6,11 +6,12 @@
   margin: 0;
   margin-right: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body{
-  padding: 0px;
+  padding: 0;
+  border: 0;
   width: 100%;
 }
 .title {
@@ -23,7 +24,7 @@ h1{
 
 }
 h2{
-    text-align: left; 
+    text-align: center; 
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-style: normal;
@@ -325,7 +326,6 @@ svg:hover{
 }
 
 .barner{
-  padding: 0;
   height: 3rem;
   width: 100%;
   background-color: red;
@@ -341,8 +341,8 @@ svg:hover{
   grid-template-areas: "lside mid mid mid rside"
                       "lside mid mid mid rside"
                       "lfooter footer footer footer rfooter";
-  gap: 5px;
-  border: solid 2px black;
+  /* gap: 5px; */
+  /* border: solid 2px black; */
 }
 
 .c1{
@@ -376,6 +376,7 @@ svg:hover{
 /* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSS */
 @media (max-width: 430px) {
 .barner{
+    width: 100%;
     background-color: red;
     color: white;
     font-size: 18px;
@@ -389,8 +390,8 @@ svg:hover{
                         "mid mid rside"
                       "mid mid rside"
                       "footer footer footer";
-  gap: 5px;
-  border: solid 2px black;
+  /* gap: 5px; */
+  /* border: solid 2px black; */
 }
 .pg-class02{
     font-size: 0.7rem;
@@ -455,14 +456,15 @@ svg:hover{
     flex-wrap: wrap;
     gap: 3px;
     line-height: 2;
-    li h2{
-     display: none;   
-    }
+    justify-content: center;
+        li h2{
+        display: none;   
+        }
 }
 
 }
 
-@media (min-width: 375px) and (max-width: 758px ) {
+@media (min-width: 430px) and (max-width: 758px ) {
     
     .pg-class02{
         font-size: 0.8rem;
