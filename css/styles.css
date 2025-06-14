@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Moon+Dance&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Moon+Dance&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  margin-right: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0px;
+  width: 100%;
+}
+.title {
+	color: #5C6AC4;
+}
+
+h1{
+    text-align: center; 
+    color: rgb(255, 255, 255);
+
+}
+h2{
+    text-align: left; 
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: normal;
+    line-height: 1;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    text-align: left; 
+    color: rgb(103, 172, 229);
+    font-size: 10mm;
+    line-height: 2;
+    font-family:Rubik;
+    
+}
+
+a{
+    color: rgb(103, 172, 229);
+    font-size: 4mm;
+    line-height: 1;
+    font-family:Arial;
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-family: fantasy;
+    background-color: #f14b0a;
+    margin: 3px;
+    transition: 0.6s;
+}
+
+button:hover{
+    filter: brightness(120%);
+}
+.cont-btn{
+    display: flex;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+    }
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.pg-class01{
+    color: rgb(90, 43, 231);
+    font-size: 8mm;
+    line-height: 2;
+    font-family:Arial;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px
+}
+
+.pg-class02{
+    color: aliceblue;
+    font-size: 1.3rem;
+    line-height: 4;
+    text-align: center; 
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation: parpadeo 2.5s infinite;
+}
+
+.fcc-btn{
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    
+}
+
+.fcc-btn:hover {
+    background-color: #223094;
+    padding: 6px 15px;
+  }
+
+
+
+
+@keyframes parpadeo {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+}
+
+.pg-class02:hover{
+    text-shadow: 2px 2px 2px black;
+}
+
+.fcc-btn2{
+    text-align: right;
+    background-color: #0a75f1;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.fcc-btn2:hover{
+    background-color: #ffffff;
+    color: #0a75f1;
+    font-weight: bold;
+    
+}
+
+.pg-class03{
+    text-align: left; 
+    font-style:normal; 
+    font-size: 20px; 
+    color: rgb(143, 145, 12); 
+    line-height: 2;
+}
+
+.pg-class04{
+    text-align: right; 
+    font-style:normal; 
+    font-size: 20px; 
+    color: rgb(143, 145, 12); 
+    line-height: 2;
+    font-family: Georgia;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px;
+}
+
+.pg-class05{
+    font-size: 20px; 
+    color: rgb(255, 255, 255); 
+    font-family: "Moon Dance", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.pg-class06{
+    text-align: center; 
+    font-size: 20px; 
+    color: rgb(255, 255, 255); 
+    line-height: 1rem;
+    font-family: "Moon Dance", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.carrousel .carrousel-img{
+    background-image: url('https://assets.onecompiler.app/42vw3gfvx/42vw3nywv/airplane%2001.jpg');
+    height: 18rem;
+    width: 22rem;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.carrousel{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+hr{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 1px;
+    border-width: 1px;
+}
+
+ul{
+    line-height: 3.5;
+    font-family:Arial;
+    list-style-type: none;
+}
+
+.img-01{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: medium;
+}
+
+.img-02{
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: medium;
+}
+
+.icon-01{
+    cursor: pointer;
+    text-align: center;
+}
+
+i{
+    margin: 25px;
+    transform: scale(160%);
+    transition: all 0.2s;
+    
+}
+
+i:hover{
+    transform: scale(200%);
+    transform: translate(80%);
+    color: orange;
+}
+
+span{
+    text-align: center;
+}
+
+.container01{
+    border: 2px solid;
+    color: #f14b0a;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container02{
+    justify-items: center;
+    align-content: center;
+    width: 15rem;
+    height: 15rem;
+    a{
+        img{
+            height: 100px;
+            width: 100px;
+                text-decoration: none;
+                border-radius: 9px;
+                transition: all 0.2s;
+        }
+
+        img:hover{
+            background-color: #000000;
+            border-radius: 50px;
+        }
+
+    }
+}
+
+.glass-effect{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.1rem);
+}
+
+svg{
+    text-decoration: none;
+    border-radius: 9px;
+    transition: all 0.2s;
+}
+
+svg:hover{
+    background-color: #000000;
+    border-radius: 50px;
+    
+}
+
+.link-t01{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    color: #0a75f1;
+    text-shadow: none;
+    text-align: justify;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.link-t01:hover{
+    color: #0a19f1;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #f5e108;
+    text-align: justify;
+}
+
+.barner{
+  padding: 0;
+  height: 3rem;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  align-content: center;
+}
+.content{
+  width: 100%;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 3fr 2fr 1.5fr;
+  grid-template-rows: 5fr 5fr 2fr;
+  grid-template-areas: "lside mid mid mid rside"
+                      "lside mid mid mid rside"
+                      "lfooter footer footer footer rfooter";
+  gap: 5px;
+  border: solid 2px black;
+}
+
+.c1{
+  grid-area: lside;
+}
+
+.c2{
+  grid-area: mid;
+}
+
+.c3{
+  grid-area: rside;
+}
+
+.c4{
+  grid-area: footer;
+  display: block;
+  align-content: center;
+}
+.c5{
+  grid-area: lfooter;
+  display: block;
+  align-content: center;
+}
+.c6{
+  grid-area: rfooter;
+  display: block;
+  align-content: center;
+}
+
+/* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSS */
+@media (max-width: 375px) {
+.content{
+  height: 310vh;
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-rows: 0.5fr 5fr 5fr 2fr;
+  grid-template-areas:  "header header header"
+                        "mid mid rside"
+                      "mid mid rside"
+                      "footer footer footer";
+  gap: 5px;
+  border: solid 2px black;
+}
+.pg-class02{
+    font-size: 0.7rem;
+}
+
+.pg-class05{
+    font-size: 0.5rem;
+}
+.wallpapers{
+    display: none;
+}
+.container01{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container02{
+    justify-items: center;
+    align-content: center;
+    width: 15rem;
+    height: 15rem;
+    a{
+        img{
+            height: 100px;
+            width: 100px;
+                text-decoration: none;
+                border-radius: 9px;
+                transition: all 0.2s;
+        }
+
+        img:hover{
+            background-color: #000000;
+            border-radius: 50px;
+        }
+
+    }
+}
+
+.c1{
+  grid-area: header;
+  margin-top: 1.5rem;
+}
+
+.c2{
+  grid-area: mid;
+}
+
+.c3{
+  grid-area: rside;
+}
+
+.c4{
+  grid-area: footer; 
+  /* FALTA CONFIGURAR */
+}
+
+.list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    line-height: 2;
+    li h2{
+     display: none;   
+    }
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 758px ) {
+    
+    .pg-class02{
+        font-size: 0.8rem;
+    }
+
+    .pg-class05{
+    font-size: 0.7rem;
+    }
+
+    .content{
+        height: 300vh;
+    }
+
+}
+
+@media (min-width: 758px) and (max-width: 786px ) {
+    
+    .content{
+        height:320vh;
+    }
+}
+
+@media (min-width: 786px) and (max-width: 900px ) {
+    
+    /* .pg-class02{
+    font-size: 1.1rem;
+    } */
+
+    .content{
+        height: 230vh;
+    }
+}
+
+@media (min-width:900px) {
+    ul{
+        line-height: 5;
+    }
+
+    .content{
+    height: 220vh;
+    }
+}
+
+@media (min-width:1050px) and (max-width:1485px) {
+    .content{
+        height: 220vh;
+    }
+
+    .pg-class02{
+    font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1485px) {
+    .content{
+        height: 160vh;
+    }
+}
