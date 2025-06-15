@@ -21,7 +21,7 @@ h1{
 
 }
 h2{
-    text-align: center; 
+    text-align: left; 
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-style: normal;
@@ -368,8 +368,8 @@ svg:hover{
   align-content: center;
 }
 
-/* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSS */
-@media (max-width: 430px) {
+/* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+@media (max-width: 431px) {
 .barner{
     width: 100%;
     background-color: red;
@@ -379,7 +379,8 @@ svg:hover{
     text-align: center;
 }
 .content{
-  height: 310vh;
+  height: 200vh;
+  width: 100vw;
   grid-template-columns: 3fr 3fr 1fr;
   grid-template-rows: 0.5fr 5fr 5fr 2fr;
   grid-template-areas:  "header header header"
@@ -460,7 +461,7 @@ svg:hover{
 
 }
 
-@media (min-width: 430px) and (max-width: 758px ) {
+@media (min-width: 431px) and (max-width: 758px ) {
     
     .pg-class02{
         font-size: 0.8rem;
@@ -471,9 +472,7 @@ svg:hover{
     }
 
     .content{
-        height: 200vh;
-        /* display: flex;
-        flex-wrap: wrap; */
+        height: 300vh;
         
     }
 
@@ -489,7 +488,7 @@ svg:hover{
 @media (min-width: 758px) and (max-width: 786px ) {
     
     .content{
-        height:320vh;
+        height:230vh;
     }
 }
 
