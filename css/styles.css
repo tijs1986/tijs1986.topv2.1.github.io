@@ -386,7 +386,7 @@ svg:hover{
 }
 
 /* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-@media (max-width: 431px) {
+@media (max-width: 425px) {
 .barner{
     width: 100%;
     background-color: red;
@@ -504,7 +504,7 @@ i{
 
 }
 
-@media (min-width: 431px) and (max-width: 758px ) {
+@media (min-width: 425px) and (max-width: 758px ) {
     
     .pg-class02{
         font-size: 0.8rem;
