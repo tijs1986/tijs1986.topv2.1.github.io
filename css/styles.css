@@ -372,13 +372,20 @@ svg:hover{
 .hamburguer{
     display: none;
         svg{
+        fill: black;
         cursor: pointer;
         height: 35px;
+
     }   
+}
+
+.hamburguer svg:active, .hamburguer svg:focus{
+    fill: black;
 }
 
 .hamburguer-panel{
     display: none;
+    align-content: center;
     backdrop-filter: blur(0.2rem);
     height: 50px;
     width: 100vw;
@@ -405,7 +412,7 @@ button{
   height: 200vh;
   width: 100vw;
   grid-template-columns: 2fr 3fr 2fr;
-  grid-template-rows: 0.7fr 5fr 5fr 2fr;
+  grid-template-rows: 0.8fr 5fr 5fr 2fr;
   grid-template-areas:  "header header header"
                         "mid mid mid"
                       "mid mid mid"
@@ -425,12 +432,12 @@ button{
     display: flex;
     /* flex-direction: column; */
     gap: 10px;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .container02{
     justify-items: center;
-    align-content: center;
+    align-items: center;
     width: 15rem;
     height: 15rem;
     a{
@@ -453,7 +460,6 @@ button{
 .c1{
   grid-area: header;
   margin-top: 1.5rem;
-  /* position: relative; */
 }
 
 .c2{
@@ -478,7 +484,7 @@ button{
   grid-area: rfooter; 
 }
 
-.list ul {
+.c1 .list ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

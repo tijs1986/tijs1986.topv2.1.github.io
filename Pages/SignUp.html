@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Twenty One Pilots - Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Styles04.css'>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg> -->
+      
+    
+ </head>
+ <body>
+    <div class="cont">
+        <div class="title">SIGN UP</div><br>
+        <form name="signup" id="signup" method="post">
+            <div class="form-group">
+                <span>first name</span>
+                <input type="text" name = "firstname" id="firstname" placeholder="enter your first name" style="margin-left: 16px" >
+            </div>
+            <div class="form-group">
+                <span>last name</span>
+                <input type="text" name = "lastname" id="lastname"  placeholder="enter your lastname" style="margin-left: 16px">
+            </div>
+            <div class="form-group">
+                <span>email</span>
+                <input type="email" name = "email" id="email" placeholder="enter a valid email" style="margin-left: 49px">
+            </div>
+            <div class="form-group">
+                <span>sex</span>
+                <select id="sex" name="sex" title="sex"  style="margin-left: 64px">
+                    <option value = "select">-Please Select-</option>
+                    <option value = "man">Man</option>
+                    <option value = "woman">Woman</option>
+                    <option value = "non-binary">Non-binary</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span>password</span>
+                <input type="password" name = "password" id="password" placeholder="create your password" style="margin-left: 16px">
+            </div>
+            <div class="form-group">
+                <span>repassword</span>
+                <input type="password" name = "repassword" id="repassword" placeholder="reenter your password" style="margin-left: 1px">
+            </div><br>
+            <div class="form-btn">
+                <input class="btn01" type = "submit" id="submit" value="Sign Up">
+            </div>
+        </form>
+        <div class="text-01">
+            <span>already a member? please <a href="s02.Task.Login.html"><b>Log in</b></a></span>
+        </div>
+        
+    </div>
+
+    <div class="icon-01">
+        <span><i class="fa-solid fa-house"></i></span>
+    </div>
+    &nbsp &nbsp
+
+<script src='js/signup.js'></script>
+ </body>
+ </html>
