@@ -9,11 +9,11 @@
   box-sizing: border-box;
 }
 
-/* body{
+body{
   padding: 0;
   border: 0;
   width: 100vw;
-} */
+}
 
 h1{
     text-align: center; 
@@ -371,6 +371,10 @@ svg:hover{
 
 .hamburguer{
     display: none;
+        svg{
+        cursor: pointer;
+        height: 35px;
+    }   
 }
 
 .hamburguer-panel{
@@ -495,10 +499,7 @@ i{
     display: flex;
     margin-right: 15px;
     justify-content: right;
-    svg{
-        cursor: pointer;
-        height: 35px;
-    }   
+
 }
 
 }
