@@ -6,14 +6,14 @@
   margin: 0;
   margin-right: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
-body{
+/* body{
   padding: 0;
   border: 0;
-  width: 100%;
-}
+  width: 100vw;
+} */
 
 h1{
     text-align: center; 
@@ -53,7 +53,7 @@ button{
     color: #ffffff;
     font-family: fantasy;
     background-color: #f14b0a;
-    margin: 3px;
+    /* margin: 3px; */
     transition: 0.6s;
 }
 
@@ -63,6 +63,7 @@ button:hover{
 .cont-btn{
     display: flex;
     flex-direction: column;
+    gap: 5px;
     a{
         text-decoration: none;
     }
@@ -368,6 +369,18 @@ svg:hover{
   align-content: center;
 }
 
+.hamburguer{
+    display: none;
+}
+
+.hamburguer-panel{
+    display: none;
+    backdrop-filter: blur(0.2rem);
+    height: 50px;
+    width: 100vw;
+    z-index: 1;
+}
+
 /* MEDIA QUERIESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 @media (max-width: 431px) {
 .barner{
@@ -378,17 +391,21 @@ svg:hover{
     font-weight: 700;
     text-align: center;
 }
+
+button{
+    height: 30px;
+    width: 60px;
+}
+
 .content{
   height: 200vh;
   width: 100vw;
-  grid-template-columns: 3fr 3fr 1fr;
-  grid-template-rows: 0.5fr 5fr 5fr 2fr;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 0.7fr 5fr 5fr 2fr;
   grid-template-areas:  "header header header"
-                        "mid mid rside"
-                      "mid mid rside"
-                      "footer footer footer";
-  /* gap: 5px; */
-  /* border: solid 2px black; */
+                        "mid mid mid"
+                      "mid mid mid"
+                      "lfooter cfooter rfooter";
 }
 .pg-class02{
     font-size: 0.7rem;
@@ -432,19 +449,29 @@ svg:hover{
 .c1{
   grid-area: header;
   margin-top: 1.5rem;
+  /* position: relative; */
 }
 
 .c2{
   grid-area: mid;
+  
 }
 
 .c3{
-  grid-area: rside;
+  /* grid-area: none; */
+  display: none;
 }
 
 .c4{
-  grid-area: footer; 
-  /* FALTA CONFIGURAR */
+  grid-area: cfooter; 
+}
+
+.c5{
+  grid-area: lfooter; 
+}
+
+.c6{
+  grid-area: rfooter; 
 }
 
 .list ul {
@@ -457,6 +484,21 @@ svg:hover{
         li h2{
         display: none;   
         }
+}
+
+i{
+    font-size: 10px;
+    margin: 10px;
+}
+
+.hamburguer{
+    display: flex;
+    margin-right: 15px;
+    justify-content: right;
+    svg{
+        cursor: pointer;
+        height: 35px;
+    }   
 }
 
 }

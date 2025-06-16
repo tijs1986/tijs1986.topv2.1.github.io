@@ -1,16 +1,33 @@
+    
+    var cont = 1;
 
 function logout(){
     localStorage.setItem('authenticated','false');
 }
+
+    function hamburguer(){
+        const panel = document.getElementById('hamburguer-panel');
+        console.log(cont);
+        if (cont == 1){
+        panel.style.display = "block";
+        cont--;
+        } else if(cont==0){
+            panel.style.display = "none";
+            cont++;
+        }
+    
+    }
 
 
 window.onload = function(){
     const btn01 = document.getElementById('button01');
     const btn02 = document.getElementById('button02');
     const btn03 = document.getElementById('button03');
+    // const panel = document.getElementById('hamburguer-panel');
     let $btnfwd = document.getElementById('forward');
     let $btnback = document.getElementById('back');
     let $image = document.getElementById('image');
+    // var cont = 1;
 
 
     let actual = 1;
@@ -59,5 +76,16 @@ window.onload = function(){
     $btnfwd.addEventListener('click',forward);
     $btnback.addEventListener('click',back);
     render();
+
+    // function hamburguer(){
+    //     console.log(cont);
+    //     if (cont = 1){
+    //     panel.style.display = "block";
+    //     cont--;
+    //     } else{
+    //         panel.style.display = "none";
+    //     }
+    
+    // }
 
 }
