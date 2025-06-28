@@ -191,7 +191,7 @@ button:hover{
   /*display: block;*/
   justify-content: center;
   align-content: center;
-  
+  margin: 10px;
   img{
     width: 100%;
     display: block;
@@ -202,13 +202,15 @@ button:hover{
   display: flex;
   gap: 10px;
   transition: transform 0.5s ease-in-out;
+  border: solid 2px orange;
+  margin: 10px;
 }
 
 .navigation{
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -10px;
+  top: 0px;
 }
 
 .copyright{
@@ -279,6 +281,7 @@ span{
 }
 
 .container02{
+    display: grid;
     justify-items: center;
     align-content: center;
     width: 15rem;
@@ -372,17 +375,14 @@ svg:hover{
 
 .c4{
   grid-area: footer;
-  /* display: block; */
   align-content: center;
 }
 .c5{
   grid-area: lfooter;
-  /* display: block; */
   align-content: center;
 }
 .c6{
   grid-area: rfooter;
-  /* display: block; */
   align-content: center;
 }
 
@@ -421,7 +421,7 @@ svg:hover{
 }
 
 button{
-    height: 30px;
+    height: 40px;
     width: 60px;
 }
 
@@ -447,7 +447,6 @@ button{
 }
 .container01{
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
     justify-content: center;
 }
@@ -485,7 +484,6 @@ button{
 }
 
 .c3{
-  /* grid-area: none; */
   display: none;
 }
 

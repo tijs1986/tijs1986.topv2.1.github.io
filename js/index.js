@@ -24,6 +24,9 @@ window.onload = function(){
     const btn01 = document.getElementById('button01');
     const btn02 = document.getElementById('button02');
     const btn03 = document.getElementById('button03');
+    const btn04 = document.getElementById('button04');
+    const btn05 = document.getElementById('button05');
+    const btn06 = document.getElementById('button06');
     // const panel = document.getElementById('hamburguer-panel');
     let $btnfwd = document.getElementById('forward');
     let $btnback = document.getElementById('back');
@@ -46,6 +49,9 @@ window.onload = function(){
         btn01.hidden = true;
         btn02.hidden = false;
         btn03.hidden = true;
+        btn04.hidden = true;
+        btn05.hidden = false;
+        btn06.hidden = true;
     }else{
         btn02.hidden = true;
     }
