@@ -1,4 +1,3 @@
-// var autenticated = false;
 localStorage.setItem('authenticated','false');
 const login = document.querySelector('#login');
 
@@ -18,8 +17,7 @@ try {
         alert(`Welcome ${validUser.firstname}`)
         localStorage.setItem('login_success', JSON.stringify(validUser))
         localStorage.setItem('authenticated','true');
-        window.location.href = 'index.html'
-        // cambiartext()
+        window.location.href = '../index.html'
     }
         
 })

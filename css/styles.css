@@ -177,21 +177,38 @@ button:hover{
     font-style: normal;
 }
 
-.carrousel .carrousel-img{
-    background-image: url('https://assets.onecompiler.app/42vw3gfvx/42vw3nywv/airplane%2001.jpg');
-    height: 18rem;
-    width: 22rem;
-    background-size: contain;
-    background-position: center;
-
+.wallpapers{
+  width: 100%;
+  /*margin: auto;*/
+  overflow: hidden;
 }
 
-.carrousel{
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
+.gallery-item{
+  /*min-height: 100px;*/
+  /*max-height: 250px;*/
+  width: 100%;
+  box-sizing: border-box;
+  /*display: block;*/
+  justify-content: center;
+  align-content: center;
+  
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+
+.gallery-container{
+  display: flex;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -10px;
 }
 
 .copyright{
