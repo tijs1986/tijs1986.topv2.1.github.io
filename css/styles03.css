@@ -268,22 +268,25 @@ button:hover{
 /* TAMAÑO CELULAR */
 @media (max-width:440px) {
 h1{
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 }
 h2{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
 }
 p{
-    font-size: 0.4rem;
+    font-size: 1rem;
 }
 .barner{
     /* display: flex;
     flex-direction: column;
     width: 100vw; */
+    height: auto;
+    padding: 1rem;
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
     border: solid 0.2rem black;
 }
 
@@ -291,7 +294,7 @@ p{
     /* width: 100%; */
     /* width: 100vw; */
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 4fr 4fr 2fr;
     grid-template-rows: 5fr 20fr 20fr 20fr;
     gap: 2px;
 
@@ -302,7 +305,7 @@ p{
     grid-row: 1/2;
     background-color: red;
     h1{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 }
@@ -320,7 +323,7 @@ p{
 .img-cont{
 justify-self: center;
 align-content: center;
-width: 50%;
+width: 18rem;
     img{
         width: 100%;
     }
@@ -328,14 +331,14 @@ width: 50%;
 .c3{
     grid-column: 1/5;
     grid-row: 4/5;
+    align-content: center;
     li{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 }
 
 .main-02{
-    width: 100vw;
-    /* width: 1000px; */
+    width: 100%;
     display: grid;
     justify-self: center;
     grid-template-columns: 2fr 2fr 2fr;
@@ -344,12 +347,13 @@ width: 50%;
 }
 
 .c4{
-    grid-column: span 3;
+    grid-column: 1/4;
     grid-row: 1/2;
+    align-content: center;
 }
 
 .c5{
-    grid-column: span 3;
+    grid-column: 1/4;
     grid-row: 2/4;
 }
 
@@ -358,41 +362,50 @@ width: 50%;
     display: grid;
     justify-self: center;
     grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 10fr 20fr 20fr;
+    grid-template-rows: 10fr 20fr 10fr;
     gap: 2px;
+    width: 100%;
 }
 
 .c6{
-    grid-column: span 3;
+    grid-column: 1/4;
     grid-row: 1/2;
+    /* width: 100%; */
 }
 
 .c7{
     /* width: 100%; */
-    grid-column: span 3;
+    grid-column: 1/4;
     grid-row: 2/4;
+    justify-items: center;
+    .info-comment{
+        display: flex;
+        justify-content: space-between;
+    }
     .form-comment{
         border: solid 1px black;
-        width: 80%;
+        width: 90%;
         input{
             border: solid 1px black;
-            height: 0.5rem;
-            font-size: 0.25rem;
+            height: 1rem;
+            width: fit-content;
+            font-size: 0.4rem;
         }
         .comment{
             min-width: 90%;
             max-width: 100%;
-            min-height: 50px;
-            max-height: 80px;
-            font-size: 0.25rem;
+            min-height: 80px;
+            max-height: 100px;
+            /* height: 100px; */
+            font-size: 0.4rem;
         }
         .submit{
-            padding: 0.2rem;
-            height: 1rem;
-            width: 3.5rem;
+            padding: 0.5rem;
+            height: 1.5rem;
+            width: 5rem;
             color: rgb(1, 79, 162);
             background-color: yellow;
-            font-size: 0.3rem;
+            font-size: 0.5rem;
         }
     }
 }
@@ -400,7 +413,7 @@ width: 50%;
 .footer{
     /* width: 100vw; */
     grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 15fr 15fr 5fr;
+    grid-template-rows: 10fr 10fr 5fr;
 }
 
 .footer::before{
@@ -419,18 +432,18 @@ width: 50%;
     grid-column: 3/4;
     grid-row: 1/3;
     button{
-    height: 1rem;
-    width: 2rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    font-size: 0.4rem;
+        height: 2rem;
+        width: 4rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        font-size: 0.8rem;
     }
 }
 .c10{
     grid-column: span 3;
     grid-row: 3/4;
     p{
-        font-size: 0.2rem;
+        font-size: 0.5rem;
     }
 }
 }
